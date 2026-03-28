@@ -1,3 +1,5 @@
+import countryfacts from "../api/countryData.json"
+
 export const About = () => {
     return (
         <section className="section-about container">
@@ -8,23 +10,32 @@ export const About = () => {
             </h2>
 
             <div className="gradient-cards">
-                <div className="card">
-                    <div className="container-card bg-blue-box">
-                    <p className="card-title">India</p>
-                    <p>
-                        <span className="card-descrption">Capital:</span>
-                        Delhi
-                    </p>
-                    <p>
-                        <span className="card-descrption">Population:</span>
-                        1415236637
-                    </p>
-                    <p>
-                        <span className="card-descrption">Interesting Fact:</span>
-                        We love India
-                    </p>
-                    </div>
-                </div>
+                {
+                    countryfacts.map((country) => {
+
+                        const { id, countryName, capital, population, interestingFact } = country;
+
+                        return (
+                            <div className="card" key={id}>
+                                <div className="container-card bg-blue-box">
+                                    <p className="card-title">{countryName}</p>
+                                    <p>
+                                        <span className="card-descrption">Capital:</span>
+                                        {capital}
+                                    </p>
+                                    <p>
+                                        <span className="card-descrption">Population:</span>
+                                        {population}
+                                    </p>
+                                    <p>
+                                        <span className="card-descrption">Interesting Fact:</span>
+                                        {interestingFact}
+                                    </p>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
             </div>
         </section>
     )
