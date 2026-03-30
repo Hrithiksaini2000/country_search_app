@@ -20,15 +20,15 @@ export const About = () => {
                                 <div className="container-card bg-blue-box">
                                     <p className="card-title">{countryName}</p>
                                     <p>
-                                        <span className="card-descrption">Capital:</span>
+                                        <span className="card-descrption">Capital: </span>
                                         {capital}
                                     </p>
                                     <p>
-                                        <span className="card-descrption">Population:</span>
+                                        <span className="card-descrption">Population: </span>
                                         {population}
                                     </p>
                                     <p>
-                                        <span className="card-descrption">Interesting Fact:</span>
+                                        <span className="card-descrption">Interesting Fact: </span>
                                         {interestingFact}
                                     </p>
                                 </div>
