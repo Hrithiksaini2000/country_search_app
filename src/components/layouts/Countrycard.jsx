@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 export const Countrycard = ({ country }) => {
 
     const { flags, name, capital, region, population } = country
@@ -22,6 +24,12 @@ export const Countrycard = ({ country }) => {
                         <span className="card-description">Capital: </span>
                         {capital[0]}
                     </p>
+                    {/* Dynamic Routing creating */}
+                    <NavLink to={`/country/${name.common}`}>
+                        <button>
+                            Read More
+                        </button>
+                    </NavLink>
                 </div>
             </div>
         </li>

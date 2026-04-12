@@ -587,6 +587,12 @@ contact us Page ends here
   mask-composite: subtract;
   animation: l3 1s infinite linear;
 }
+.loader-center{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
 @keyframes l3 {
   to {
     transform: rotate(1turn);

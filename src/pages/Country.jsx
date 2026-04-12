@@ -15,7 +15,7 @@ export const Country = () => {
         // The UseTransition Hook is used for async th data
         startTransition(async () => {
             const res = await getCountryData()
-            console.log(res)
+            // console.log(res)
             setCountries(res.data)
         })
     }, [])

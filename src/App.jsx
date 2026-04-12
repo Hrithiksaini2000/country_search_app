@@ -9,8 +9,9 @@ import { About } from "./pages/About"
 import { Country } from "./pages/Country"
 import { Contact } from "./pages/Contact"
 import { Errorpage } from "./pages/Errorpage"
+import { CountryDetails } from "./components/layouts/CountryDetails"
 
-// Create Navigation Routes in React router dome using create browser router
+// Create Navigation Routes in React router dome using create browser router of modern approach
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
       {
         path: "country",
         element: <Country />
+      },
+      // Dynamic Route is created and remeber always used this vertical dots : as a dynamic route
+      {
+        path: "country/:id",
+        element: <CountryDetails />
       },
       {
         path: "contact",
