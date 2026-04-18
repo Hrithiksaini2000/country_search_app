@@ -47,7 +47,7 @@ export const Country = () => {
     return (
         <section className="country-section">
 
-            <Searchfilter search={search} Setsearch={Setsearch} filter={filter} Setfilter={Setfilter} />
+            <Searchfilter search={search} Setsearch={Setsearch} filter={filter} Setfilter={Setfilter} countries={countries} setCountries={setCountries} />
             <ul className="grid grid-four-cols">
                 {/* Mapping The data in In Countrycard component Through Props */}
                 {
