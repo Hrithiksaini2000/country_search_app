@@ -11,6 +11,7 @@ export const Searchfilter = ({ search, Setsearch, filter, Setfilter, countries, 
     }
 
     const sortcountries=(value)=>{
+        // Sort method by using localeCompare method  
         const sortcountry=[...countries].sort((a,b)=>{
             return value === "asc"
             ? a.name.common.localeCompare(b.name.common)

@@ -14,7 +14,7 @@ export const Contact = () => {
                 <form action={handleformsubmit} >
                     <input type="text" required autoComplete="false" placeholder="Enter Your Username" name="username" className="form-control" />
                     <input type="email" required autoComplete="false" placeholder="Enter Your Email" name="email" className="form-control" />
-                    <textarea className="form-control" rows="10" placeholder="Enter Your Message" name="message" required autoComplete="false" />
+                    <textarea className="form-control" rows="10" placeholder="Enter Your Message" name="message" required autoComplete="off" />
                     <button type="submit" value="send">Send</button>
                 </form>
             </div>
